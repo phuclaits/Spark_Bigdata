@@ -81,13 +81,14 @@ Data is loaded and preprocessed using Spark DataFrames. The features are vectori
     - `pip3 install pyspark`
     `sudo pip3 install jupyter`
   6. Start HDFS with Hadoop Master and Hadoop Salve
-    - **You must make sure to always ensure ssh connection between machines and proper netplan configuration**
-    - Access the "hadoop" folder in the "bin" file or use terminal `start-dfs.sh` `start-yarn.sh` `start-all.sh`
-    - Upload DataSet in Browser Directory in **hostname:9870/explorer.html#/**
-    - Then, Open new Terminal in folder **"/home/phuc03/spark"** : `start-master.sh` `start-salve.sh`
-    - Turn on Worker with Master and Salve: `/home/phuc03/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark:master:7077` master is hostname of master machine.
+  - **You must make sure to always ensure ssh connection between machines and proper netplan configuration**
+  - Access the "hadoop" folder in the "bin" file or use terminal `start-dfs.sh` `start-yarn.sh` `start-all.sh`
+  - Upload DataSet in Browser Directory in **hostname:9870/explorer.html#/**
+  - Then, Open new Terminal in folder **"/home/phuc03/spark"** : `start-master.sh` `start-salve.sh`
+  - Turn on Worker with Master and Salve: `/home/phuc03/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark:master:7077` master is hostname of master machine.
   7. Start Jupyter NoteBook
-    - `jupyter notebook` => **localhost:8888**
+  - `jupyter notebook` => **localhost:8888**
+
 ## How to Run
 1. Set up Apache Spark and PySpark environment.
 2. Load the notebook and run each cell sequentially.
