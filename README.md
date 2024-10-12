@@ -67,18 +67,18 @@ Data is loaded and preprocessed using Spark DataFrames. The features are vectori
     If Python3 is not already installed, you can install it using:  `sudo apt update` or `sudo apt install python3 python3-pip`
     Verify the installation: `python3 --version`
   4. Download and Install Apache Spark
-    Download the latest version of Spark (adjust the version as necessary, you can find the latest version on the [Apache Spark download at here](https://dlcdn.apache.org/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz)
-    Use `wget https://dlcdn.apache.org/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz`
-    Extract the downloaded Spark archive: `tar -xvf spark-3.5.3-bin-hadoop3.tgz`
-    Move the extracted Spark folder to **phuc03/spark**, before move I also created folder **"Spark"** in **/home/phuc03** : `sudo mv spark-3.5.3-bin-hadoop3 /home/phuc03/spark`
-    Set Environment Variables in file .Bashrc => `/home/phuc03` if you don't see, please press **Ctrl H** to display at their. Or use terminal `sudo nano ~/.bashrc`
-    Add:
-        `export SPARK_HOME=/opt/spark
+  - Download the latest version of Spark (adjust the version as necessary, you can find the latest version on the [Apache Spark download at here](https://dlcdn.apache.org/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz)
+  - Use `wget https://dlcdn.apache.org/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz`
+  - Extract the downloaded Spark archive: `tar -xvf spark-3.5.3-bin-hadoop3.tgz`
+  - Move the extracted Spark folder to **phuc03/spark**, before move I also created folder **"Spark"** in **/home/phuc03** : `sudo mv spark-3.5.3-bin-hadoop3 /home/phuc03/spark`
+  - Set Environment Variables in file .Bashrc => `/home/phuc03` if you don't see, please press **Ctrl H** to display at their. Or use terminal `sudo nano ~/.bashrc`
+  - Add:
+        + `export SPARK_HOME=/opt/spark
         export PATH=$SPARK_HOME/bin:$PATH`
-    Then, Ctrl X -> Enter -> Enter, To save file .bashrc
-    At terminal, we must need `source ~/.bashrc `
+  - Then, Ctrl X -> Enter -> Enter, To save file .bashrc
+  - At terminal, we must need `source ~/.bashrc `
   5. Install PySpark and Jupyter NoteBook
-    `pip3 install pyspark`
+    - `pip3 install pyspark`
     `sudo pip3 install jupyter`
   6. Start HDFS with Hadoop Master and Hadoop Salve
     - **You must make sure to always ensure ssh connection between machines and proper netplan configuration**
