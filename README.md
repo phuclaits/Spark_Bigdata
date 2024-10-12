@@ -52,8 +52,8 @@ Data is loaded and preprocessed using Spark DataFrames. The features are vectori
   - Gradient Boosted Trees
 
 ### 4. Virtual Machine
-- VirtualBox Manager
-- On Ubuntu/Linux Environment
+  - VirtualBox Manager
+  - On Ubuntu/Linux Environment
   
 ### 5. Installation instructions
   1. Download and install the latest version of Ubuntu.
@@ -81,13 +81,13 @@ Data is loaded and preprocessed using Spark DataFrames. The features are vectori
     `pip3 install pyspark`
     `sudo pip3 install jupyter`
   6. Start HDFS with Hadoop Master and Hadoop Salve
-    **You must make sure to always ensure ssh connection between machines and proper netplan configuration**
-    Access the "hadoop" folder in the "bin" file or use terminal `start-dfs.sh` `start-yarn.sh` `start-all.sh`
-    Upload DataSet in Browser Directory in **hostname:9870/explorer.html#/**
-    Then, Open new Terminal in folder **"/home/phuc03/spark"** : `start-master.sh` `start-salve.sh`
-    Turn on Worker with Master and Salve: `/home/phuc03/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark:master:7077` master is hostname of master machine.
+    - **You must make sure to always ensure ssh connection between machines and proper netplan configuration**
+    - Access the "hadoop" folder in the "bin" file or use terminal `start-dfs.sh` `start-yarn.sh` `start-all.sh`
+    - Upload DataSet in Browser Directory in **hostname:9870/explorer.html#/**
+    - Then, Open new Terminal in folder **"/home/phuc03/spark"** : `start-master.sh` `start-salve.sh`
+    - Turn on Worker with Master and Salve: `/home/phuc03/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark:master:7077` master is hostname of master machine.
   7. Start Jupyter NoteBook
-    `jupyter notebook` => **localhost:8888**
+    - `jupyter notebook` => **localhost:8888**
 ## How to Run
 1. Set up Apache Spark and PySpark environment.
 2. Load the notebook and run each cell sequentially.
@@ -95,9 +95,9 @@ Data is loaded and preprocessed using Spark DataFrames. The features are vectori
 4. If you prefer, you can run Spark in local mode without setting up a full cluster. Spark is capable of running on a single machine using the local master URL. This is ideal for development and testing purposes.
    ` spark-submit --master local[*] your_script.py`
 # Conclusion
-In this project, we applied multiple machine learning algorithms such as Decision Tree, Random Forest, Logistic Regression, and Gradient Boosted Trees using Apache Spark’s MLlib library. This demonstrated the power of Spark for distributed data processing and parallel model training, making it a suitable solution for big data and large-scale machine learning tasks.
+  - In this project, we applied multiple machine learning algorithms such as Decision Tree, Random Forest, Logistic Regression, and Gradient Boosted Trees using Apache Spark’s MLlib library. This demonstrated the power of Spark for distributed data processing and parallel model training, making it a suitable solution for big data and large-scale machine learning tasks.
 
-By running this notebook, you learned how to preprocess data, train different models, evaluate their accuracy, and use Spark’s distributed computing capabilities. This setup can be extended to more advanced tasks by adjusting parameters, adding more data, or experimenting with different models.
+- By running this notebook, you learned how to preprocess data, train different models, evaluate their accuracy, and use Spark’s distributed computing capabilities. This setup can be extended to more advanced tasks by adjusting parameters, adding more data, or experimenting with different models.
 
 Thank you!
 We hope this guide and project helped you better understand Apache Spark's potential for machine learning and distributed computing. Thank you for using this project, and we wish you success with your own data projects!
